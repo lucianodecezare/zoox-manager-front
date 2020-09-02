@@ -24,7 +24,7 @@
           dense
           filled
           lazy-rules
-          type="senha"
+          type="password"
           v-model="formData.senha"
           :label="$t('login.inputPassword')"
           :rules="[val => val && val.length > 0 || $t('forms.fieldRequired')]"
