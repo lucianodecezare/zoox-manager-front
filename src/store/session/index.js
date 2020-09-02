@@ -17,6 +17,7 @@ const actions = {
       });
 
     LocalStorage.set('token', data.token);
+    LocalStorage.set('usuario', payload.usuario);
 
     // Coloca o token no header de cada requisição
     axiosInstance.defaults.headers.common['X-Api-Key'] = data.token;
@@ -28,8 +29,7 @@ const actions = {
    */
   async logoutUser() {
     LocalStorage.remove('token');
-
-    this.dispatch('users/setUserDetails', {});
+    LocalStorage.remove('usuario');
 
     // Remove o token do header de cada requisição
     axiosInstance.defaults.headers.common['X-Api-Key'] = '';

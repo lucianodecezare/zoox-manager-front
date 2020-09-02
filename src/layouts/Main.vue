@@ -12,8 +12,18 @@
         />
 
         <q-toolbar-title class="flex justify-center">
-          Zoox Manager
+          <!-- Botao Home -->
+          <q-btn
+            flat
+            size="lg"
+            stretch
+            style="margin-left: -12px"
+            to="/"
+            :label="$t('menuMain.buttonHome')"
+          />
         </q-toolbar-title>
+
+        <UserMenu />
       </q-toolbar>
     </q-header>
 
@@ -46,6 +56,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue';
+import UserMenu from 'components/UserMenu.vue';
 
 const linksData = [
   {
@@ -62,7 +73,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
+  components: { EssentialLink, UserMenu },
   data() {
     return {
       leftDrawerOpen: true,

@@ -10,10 +10,16 @@ export default {
     fieldRequired: 'Campo obrigatório',
   },
   login: {
-    buttonLogin: 'Login',
+    buttonLogin: 'Conectar',
     inputUsername: 'Usuário',
     inputPassword: 'Senha',
     messageAuth: 'Autenticando usuário',
-    title: 'Login',
+    title: 'Bem Vindo',
+  },
+  menuMain: {
+    buttonHome: 'Zoox Manager',
+  },
+  menuUser: {
+    buttonLogout: 'Desconectar',
   },
 };
