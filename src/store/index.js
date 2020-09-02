@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import session from './session';
+import settings from './settings';
 
 Vue.use(Vuex);
 
@@ -18,6 +19,7 @@ export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
       session,
+      settings,
     },
 
     // enable strict mode (adds overhead!)

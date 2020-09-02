@@ -23,6 +23,8 @@
           />
         </q-toolbar-title>
 
+        <LanguageSelector />
+
         <UserMenu />
       </q-toolbar>
     </q-header>
@@ -56,6 +58,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue';
+import LanguageSelector from 'components/LanguageSelector';
 import UserMenu from 'components/UserMenu.vue';
 
 const linksData = [
@@ -73,7 +76,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink, UserMenu },
+  components: { EssentialLink, LanguageSelector, UserMenu },
   data() {
     return {
       leftDrawerOpen: true,
