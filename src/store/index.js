@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 
 import session from './session';
 import settings from './settings';
+import states from './states';
 
 Vue.use(Vuex);
 
@@ -20,6 +21,7 @@ export default function (/* { ssrContext } */) {
     modules: {
       session,
       settings,
+      states,
     },
 
     // enable strict mode (adds overhead!)
