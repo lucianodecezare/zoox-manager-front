@@ -3,6 +3,18 @@ export default {
     message: 'Oops. Nada encontrado...',
     buttonBack: 'Voltar',
   },
+  cities: {
+    columnName: 'Nome',
+    columnStateId: 'Estado',
+    inputName: 'Nome',
+    comboStateId: 'Estado',
+    messageSuccessDelete: 'Cidade excluida com sucesso',
+    messageSuccessInsert: 'Cidade adicionada com sucesso',
+    messageSuccessUpdate: 'Cidade alterada com sucesso',
+    tableTitleEdit: 'Editar Cidade',
+    tableTitleList: 'Cidades',
+    tableTitleNew: 'Nova Cidade',
+  },
   dialogs: {
     buttonCancel: 'Cancelar',
     buttonOk: 'Sim',

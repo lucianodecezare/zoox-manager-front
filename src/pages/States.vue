@@ -83,6 +83,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+
 import ListStates from 'components/states/ListStates';
 import RegisterStates from 'components/states/RegisterStates';
 
@@ -107,8 +108,8 @@ export default {
       this.stateId = null;
       this.filter = '';
     },
-    updateState(uuid) {
-      this.stateId = uuid;
+    updateState(id) {
+      this.stateId = id;
       this.component = 'register';
     },
   },

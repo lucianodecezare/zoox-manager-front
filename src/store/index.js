@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+import cities from './cities';
 import session from './session';
 import settings from './settings';
 import states from './states';
@@ -19,6 +20,7 @@ Vue.use(Vuex);
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
+      cities,
       session,
       settings,
       states,
