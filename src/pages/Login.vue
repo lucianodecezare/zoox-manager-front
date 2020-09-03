@@ -52,8 +52,8 @@ export default {
   data() {
     return {
       formData: {
-        usuario: '',
-        senha: '',
+        usuario: 'admin',
+        senha: 'admin',
       },
     };
   },

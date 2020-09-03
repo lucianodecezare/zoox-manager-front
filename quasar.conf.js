@@ -88,6 +88,9 @@ module.exports = function (/* ctx */) {
       iconSet: 'material-icons', // Quasar icon set
       lang: 'pt-br', // Quasar language pack
       config: {
+        brand: {
+          primary: '#455a64',
+        },
         notify: {
           position: 'top-right',
           progress: true,

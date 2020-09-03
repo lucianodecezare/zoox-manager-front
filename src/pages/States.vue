@@ -1,5 +1,5 @@
 <template>
-  <q-page padding :class="{ 'bg-blue-1': !$q.dark.isActive }">
+  <q-page padding class="bg-blue-grey-3">
     <div class="q-pa-md">
       <q-card flat bordered class="my-card q-pa-xs">
       <!-- Top -->
